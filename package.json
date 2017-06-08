@@ -1,0 +1,31 @@
+{
+  "name": "anistream",
+  "description": "continously stream anime to youtube",
+  "version": "0.1.0",
+  "homepage": "https://github.com/seanc/anistream",
+  "author": "Sean Wilson (https://imsean.me)",
+  "repository": "seanc/anistream",
+  "bugs": {
+    "url": "https://github.com/seanc/anistream/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "scripts",
+    "stream.js",
+    "LICENSE"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "bull": "^3.0.0-rc.2",
+    "execa": "^0.6.3",
+    "feed-watcher": "^0.2.1",
+    "torrent-stream": "^1.0.3"
+  }
+}

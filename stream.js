@@ -6,8 +6,8 @@ const validExts = ['.mp4', '.mkv', '.flv']
 
 function stream(magnet, cb) {
 	const engine = torrentStream(magnet, {
-    uploads: 0
-  })
+		uploads: 0
+	})
 
 	engine.on('ready', () => {
 		const file = engine.files.find(file => {

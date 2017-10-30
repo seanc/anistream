@@ -5,7 +5,7 @@ const stream = require('./stream')
 const queue = new Queue('anime streaming', null, {opts: {
   stalledInterval: 0
 }})
-const watcher = new Watcher('https://anidex.info/rss/?&cat=1,3&lang_id=1&q=', 10)
+const watcher = new Watcher('https://anidex.info/rss/?&cat=1,3&lang_id=1&', 10)
 
 queue.empty().then(() => console.log('emptied queue'))
 
